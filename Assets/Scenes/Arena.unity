@@ -626,6 +626,59 @@ Transform:
   - {fileID: 547622185}
   m_Father: {fileID: 1405358551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &124048921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124048922}
+  - component: {fileID: 124048923}
+  m_Layer: 0
+  m_Name: TempComponents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124048922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124048921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14854817, y: -2.1223025, z: 2.0363188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &124048923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124048921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.6153445, z: 1}
+  m_Center: {x: -0, y: 0.8351581, z: 0}
 --- !u!1 &125912374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: c685db5bd3a0f9b4d8ddb667b78d772f, type: 3}
@@ -1935,11 +1988,6 @@ Transform:
   - {fileID: 1780867216}
   m_Father: {fileID: 185477816}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &447573304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4417746832067311793, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-  m_PrefabInstance: {fileID: 1496589211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &485732824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,8 +3392,6 @@ MonoBehaviour:
   shieldActivated: 0
   anim: {fileID: 679227985}
   Loser: {fileID: 689423481}
-  HB: {fileID: 1243196252}
-  SkltHB: {fileID: 447573304}
 --- !u!114 &679227988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7227,25 +7273,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1087629510836323594, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-      propertyPath: HB
-      value: 
-      objectReference: {fileID: 447573304}
-    - target: {fileID: 1087629510836323594, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
       propertyPath: Winner
       value: 
       objectReference: {fileID: 308082744}
-    - target: {fileID: 1087629510836323594, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-      propertyPath: PlayerHB
-      value: 
-      objectReference: {fileID: 1243196252}
-    - target: {fileID: 3744386033342380688, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 0633d0172068a93479aae210640d4467, type: 3}
-    - target: {fileID: 3744386033342380688, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 4344783101766624694, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7290,8 +7320,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton AI
       objectReference: {fileID: 0}
-    - target: {fileID: 6463918915802915769, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 5437399471462235955, guid: 3e0cb97cea83c7d4b940cdb904bfbfc8, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10727,3 +10757,4 @@ SceneRoots:
   - {fileID: 2109010584}
   - {fileID: 1496589211}
   - {fileID: 645734996}
+  - {fileID: 124048922}

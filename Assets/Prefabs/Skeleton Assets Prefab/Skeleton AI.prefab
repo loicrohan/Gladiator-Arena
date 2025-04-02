@@ -2538,8 +2538,8 @@ GameObject:
   - component: {fileID: 8775745460004488018}
   - component: {fileID: 5973760858457110409}
   - component: {fileID: 6861716404780536399}
-  - component: {fileID: 3383648011598589531}
   - component: {fileID: 1087629510836323594}
+  - component: {fileID: 8651834764631868821}
   m_Layer: 6
   m_Name: Skeleton AI
   m_TagString: Skeleton
@@ -2602,7 +2602,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2.85
+  m_StoppingDistance: 2.95
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -2623,8 +2623,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 1725154238209111141}
---- !u!65 &3383648011598589531
-BoxCollider:
+--- !u!114 &1087629510836323594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437399471462235955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2859a16c7e9b9541a4406ed5edb7443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  healthSlider: {fileID: 4094998251132957207}
+  anim: {fileID: 8775745460004488018}
+  Winner: {fileID: 0}
+--- !u!143 &8651834764631868821
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2642,23 +2658,13 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.6153445, z: 1}
-  m_Center: {x: -0, y: 0.8351581, z: 0}
---- !u!114 &1087629510836323594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5437399471462235955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2859a16c7e9b9541a4406ed5edb7443, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  healthSlider: {fileID: 4094998251132957207}
-  anim: {fileID: 8775745460004488018}
+  m_Height: 1.8
+  m_Radius: 0.28
+  m_SlopeLimit: 45
+  m_StepOffset: 0.25
+  m_SkinWidth: 0.02
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!1 &5696077753829249860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,8 +3151,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 0633d0172068a93479aae210640d4467, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
